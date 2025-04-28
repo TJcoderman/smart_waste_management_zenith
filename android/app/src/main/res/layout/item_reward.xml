@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/couponImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="12dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/sample_coupon" />
+
+        <TextView
+            android:id="@+id/couponTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/couponImage"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="20% Off at Pizza Hut" />
+
+        <TextView
+            android:id="@+id/couponDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/couponTitle"
+            app:layout_constraintStart_toStartOf="@+id/couponTitle"
+            app:layout_constraintTop_toBottomOf="@+id/couponTitle"
+            tools:text="Valid for all dine-in orders. Min order value ₹500" />
+
+        <TextView
+            android:id="@+id/pointsRequired"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_background"
+            android:backgroundTint="@color/colorLightGreen"
+            android:drawableStart="@drawable/ic_coin"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/couponTitle"
+            app:layout_constraintTop_toBottomOf="@+id/couponDescription"
+            tools:text="150 points" />
+
+        <TextView
+            android:id="@+id/validityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pointsRequired"
+            app:layout_constraintEnd_toEndOf="@+id/couponTitle"
+            app:layout_constraintTop_toTopOf="@+id/pointsRequired"
+            tools:text="Valid till 30 Apr" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
