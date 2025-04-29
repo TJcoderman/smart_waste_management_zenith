@@ -17,3 +17,4 @@ data class Coupon(
     val startDate: Timestamp? = null,
     val endDate: Timestamp? = null
 )
+

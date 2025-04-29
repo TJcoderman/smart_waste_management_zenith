@@ -10,3 +10,4 @@ data class Deposit(
     val points_earned: Long = 0,
     val timestamp: Timestamp? = null
 )
+

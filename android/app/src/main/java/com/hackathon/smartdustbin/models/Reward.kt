@@ -13,3 +13,4 @@ data class Reward(
     val expiry_date: Timestamp? = null,
     val is_redeemed: Boolean = false
 )
+

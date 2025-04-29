@@ -11,3 +11,4 @@ data class User(
     val unreadRewards: Int = 0,
     val created_at: com.google.firebase.Timestamp? = null
 )
+
